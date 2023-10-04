@@ -19,7 +19,7 @@ Certifique-se de instalar as dependências:
 npm install
 ```
 
-## Development Server
+## Servidor de Desenvolvimento
 
 Start the development server on `http://localhost:3000`:
 
