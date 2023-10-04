@@ -21,6 +21,9 @@
     <div class="mt-3">
       <div class="list-group">
         <a class="list-group-item list-group-item-primary">Remédios</a>
+        <a v-if="medicineList.length <= 0" class="list-group-item"
+          >Nenhum remédio encontrado</a
+        >
         <NuxtLink
           v-for="(medicine, i) in medicineList"
           :key="i"
