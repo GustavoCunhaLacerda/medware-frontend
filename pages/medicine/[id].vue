@@ -62,7 +62,7 @@
       class="btn btn-primary btn-outline p-2 mt-3 fw-bold badge"
       @click="downloadPdf"
     >
-      DOWNLOAD PDF
+      BAIXAR PDF DA BULA
     </button>
   </main>
   <main v-else class="container mt-3">Caregando...</main>
