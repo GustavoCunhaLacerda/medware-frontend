@@ -143,12 +143,6 @@ export default defineNuxtComponent({
         pages.push(i);
       }
 
-      console.log(
-        currentPage.value,
-        pageOffsets.value.prev,
-        pageOffsets.value.prox,
-        pages
-      );
       return pages;
     });
 
@@ -165,8 +159,6 @@ export default defineNuxtComponent({
         .getMedicineApi()
         .list(medicineName.value ?? "", currentPage.value);
 
-      console.log(res);
-
       medicines.value = res;
       currentPage.value = 1;
     }
@@ -175,8 +167,6 @@ export default defineNuxtComponent({
       const res = await api
         .getMedicineApi()
         .list(medicineName.value ?? "", currentPage.value);
-
-      console.log(res);
 
       medicines.value = res;
     });
